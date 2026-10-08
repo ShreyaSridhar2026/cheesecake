@@ -1,0 +1,187 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-10-08T09:09:48.067Z",
+  "enableTdd": false,
+  "totalFeatures": 2,
+  "features": [
+    {
+      "id": 1289839925,
+      "taskId": "FEATURE-1289839925",
+      "title": "Manage Product Records; As a Retail Store Manager, I want to manage product records so that product information can be maintained in the system; Inventory Record Management Capability (+98 more)",
+      "slug": "retail-records-orders-governance",
+      "state": "planned",
+      "status": "needs-clarification",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "Are Retail Store Manager, Product Administrator, and Authorized Operator distinct runtime roles, aliases, or story-level labels for the same approved access group?",
+          "blocking": true
+        },
+        {
+          "id": "oq-2",
+          "text": "How do these named actors map to the source-aligned allowlist stories that restrict approved user groups to store employees and customers?",
+          "blocking": false
+        },
+        {
+          "id": "oq-3",
+          "text": "Are retrieval permissions broader than create/update permissions, and if so, what exact role mapping applies?",
+          "blocking": true
+        }
+      ],
+      "storyCount": 0,
+      "totalStoryPoints": 0,
+      "files": {
+        "specs": "specs/retail-records-orders-governance/specs.md",
+        "requirements": "specs/retail-records-orders-governance/requirements.md",
+        "prompt": "specs/retail-records-orders-governance/prompt.md"
+      },
+      "userStories": []
+    },
+    {
+      "id": 10584,
+      "taskId": "FEATURE-10584",
+      "title": "Product Record Management",
+      "slug": "manage-product-records",
+      "state": "planned",
+      "status": "needs-clarification",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "What exact API endpoints, methods, and payload schemas should be used for product list, detail, create, update, delete, and ownership reference retrieval?",
+          "blocking": true
+        },
+        {
+          "id": "oq-2",
+          "text": "What exact SKU format rule should be enforced?",
+          "blocking": false
+        },
+        {
+          "id": "oq-3",
+          "text": "What exact maximum character limit applies to Description?",
+          "blocking": false
+        },
+        {
+          "id": "oq-4",
+          "text": "Which specific category values are allowed beyond the sample data examples, and are categories fixed reference data or free-form?",
+          "blocking": false
+        },
+        {
+          "id": "oq-5",
+          "text": "Should Product ID uniqueness be enforced, and if so, what duplicate behavior/message is required?",
+          "blocking": false
+        },
+        {
+          "id": "oq-6",
+          "text": "For the product list, should the implementation use pagination or infinite list pattern?",
+          "blocking": false
+        },
+        {
+          "id": "oq-7",
+          "text": "If pagination is used, what are the default page size and sorting rules?",
+          "blocking": false
+        },
+        {
+          "id": "oq-8",
+          "text": "What specific search fields should the list search input query against?",
+          "blocking": false
+        },
+        {
+          "id": "oq-9",
+          "text": "Is the optional “status/filter if useful” actually required, and if so, what product statuses exist?",
+          "blocking": false
+        },
+        {
+          "id": "oq-10",
+          "text": "Should successful edit always route to product detail, or may it return to refreshed list depending on entry point? The source permits both.",
+          "blocking": false
+        },
+        {
+          "id": "oq-11",
+          "text": "What exact audit metadata must be recorded on delete beyond general “audit metadata”?",
+          "blocking": true
+        },
+        {
+          "id": "oq-12",
+          "text": "Is correlation ID always available, or only in some environments/operations?",
+          "blocking": false
+        },
+        {
+          "id": "oq-13",
+          "text": "What is the authoritative source/documentation that determines whether PRODUCTLOCATION is applicable to the product domain?",
+          "blocking": false
+        },
+        {
+          "id": "oq-14",
+          "text": "What exact data should appear in the “API retrieval/read-only reference panel” on the ownership and scope reference page?",
+          "blocking": true
+        },
+        {
+          "id": "oq-15",
+          "text": "Which users beyond Retail Store Manager are considered “authorized users” for read and write actions?",
+          "blocking": true
+        },
+        {
+          "id": "oq-16",
+          "text": "Are read permissions and write permissions the same for product records and the ownership reference page?",
+          "blocking": true
+        },
+        {
+          "id": "oq-17",
+          "text": "What are the required behaviors for session timeout, logout, and re-authentication?",
+          "blocking": true
+        },
+        {
+          "id": "oq-18",
+          "text": "What are the numeric performance targets referenced by “responsiveness under typical load scenarios”?",
+          "blocking": false
+        },
+        {
+          "id": "oq-19",
+          "text": "What retry behavior, if any, should be supported for transient server errors?",
+          "blocking": false
+        },
+        {
+          "id": "oq-20",
+          "text": "Are soft-delete, recovery, or legal retention requirements intentionally excluded, or is delete expected to be hard delete with only audit trace retained?",
+          "blocking": true
+        },
+        {
+          "id": "oq-21",
+          "text": "What exact source timestamp semantics are required for audit trail: application time, database time, or originating request time?",
+          "blocking": false
+        },
+        {
+          "id": "oq-22",
+          "text": "What sorting default should be used on the list page, such as Last Modified descending?",
+          "blocking": false
+        },
+        {
+          "id": "oq-23",
+          "text": "Should price currency be configurable, or is there a fixed currency for all products?",
+          "blocking": false
+        }
+      ],
+      "storyCount": 2,
+      "totalStoryPoints": 3,
+      "files": {
+        "specs": "specs/manage-product-records/specs.md",
+        "requirements": "specs/manage-product-records/requirements.md",
+        "prompt": "specs/manage-product-records/prompt.md"
+      },
+      "userStories": [
+        {
+          "id": 10596,
+          "title": "Manage Product Records",
+          "state": "New",
+          "storyPoints": null
+        },
+        {
+          "id": 10615,
+          "title": "As a Retail Store Manager, I want to manage product records so that product information can be maintained in the system",
+          "state": "New",
+          "storyPoints": 3
+        }
+      ]
+    }
+  ]
+}

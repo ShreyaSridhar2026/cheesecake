@@ -1,0 +1,20 @@
+{
+  "trackerVersion": 1,
+  "updatedAt": "2026-10-08T09:09:48.067Z",
+  "tasks": {
+    "FEATURE-1289839925": {
+      "status": "NEEDS_CLARIFICATION",
+      "title": "Manage Product Records; As a Retail Store Manager, I want to manage product records so that product information can be maintained in the system; Inventory Record Management Capability (+98 more)",
+      "featureId": 1289839925,
+      "slug": "retail-records-orders-governance",
+      "updatedAt": "2026-10-08T09:09:48.067Z"
+    },
+    "FEATURE-10584": {
+      "status": "NEEDS_CLARIFICATION",
+      "title": "Product Record Management",
+      "featureId": 10584,
+      "slug": "manage-product-records",
+      "updatedAt": "2026-10-08T09:09:48.067Z"
+    }
+  }
+}
